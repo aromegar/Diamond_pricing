@@ -9,9 +9,11 @@ In this kaggle competition, we have to launch a diamond pricing tool that uses M
 
 ## Workflow
 
-First of all, we will propose an array of candidate locations across the US, based on clusterization of similar tech-companies based on the ZIP-code of their location. We shortlist them to 10 final candidates located in San Francisco, Silicon Valley, New York and Seattle.
+In the Cleaning JN, we make some feature engineering, dropping features with high co-linearity and handling the categorical features (in this case, we assign numerical values).
 
-Second, for each location, we create a database with the interesting venues for our client in a radius of 800m. Then we query to this database wich venues are located closer than 500m and build a total score according to a previous weight distribution. The final output is a total score and a map where the proposed location and near venues are displayed.
+In the Training JN, we make a train/test split of the Train dataset and try some different regression models. We choose a RandomForestRegressor, and optimize the hyperparameters with GridSearchCV. We fit this model with the whole Train dataset.
+
+In the Predicting JN, we make a prediction for the prices of Test dataset, using the model of the previous JN.
 
 ## What is in this repo
 
@@ -22,7 +24,9 @@ In this repository you will find:
  - A slide with the bulletpoints of this project
  
  - 3 Jupyter Notebooks, for cleaning the data and training the model with Train, and launching a prediction with Test.
- 
+
+ - A "Bonus" dataset with lateral thinking for trying different approaches.
+
  - A "DATA" folder with Train and Test datasets from kaggle.
  
   - A "src" folder with source code for cleaning dataframes, etc.
