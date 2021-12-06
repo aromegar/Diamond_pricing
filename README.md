@@ -18,14 +18,14 @@ Second, for each location, we create a database with the interesting venues for 
 In this repository you will find:
 
  - A readmi.md file with information about the project (this document).
+
+ - A slide with the bulletpoints of this project
  
- - A "0 - Finding candidates" Jupyter notebook in wich we extract 10 candidates for further analysis.
+ - 3 Jupyter Notebooks, for cleaning the data and training the model with Train, and launching a prediction with Test.
  
- - A subsequent series of Jupyter notebooks called "1-First candidate", "2-Second candidate", etc with particular analysis for each candidate.
+ - A "DATA" folder with Train and Test datasets from kaggle.
  
- - A "DATA" folder with a csv with the candidates info (including a map) and a specific json file with the venues around each candidate analyzed.
- 
-  - A "src" folder with cleaning functions and API functions for calling Google and zip codes service.
+  - A "src" folder with source code for cleaning dataframes, etc.
  
 ## Libraries
 
@@ -33,9 +33,11 @@ In this project we have used the following libraries:
 
  - [pandas](https://pandas.pydata.org/docs/)
  
- - [pymongo](https://pymongo.readthedocs.io/)
+ - [numpy](https://numpy.org/doc/)
  
- - [json](https://docs.python.org/3/library/json.html)
+ - [seaborn](https://seaborn.pydata.org/)
+
+ - [scikit-learn](https://scikit-learn.org/stable/)
  
- - [folium](https://python-visualization.github.io/folium/)
+ - [pickle](https://docs.python.org/3/library/pickle.html/)
 
